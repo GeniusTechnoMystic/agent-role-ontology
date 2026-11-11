@@ -26,4 +26,4 @@ Project copyright notice authorised by the owner:
 
 Copyright (c) 2026 Danny Poulson (GeniusTechnoMystic)
 
-This acknowledgement is not a copyright assignment to a service or model, does not establish copyright in every generated passage, and does not relicense third-party material. Original software and executable tooling use LICENSES/MIT.txt. Other asset categories follow docs/licensing-policy.md; standard CC0 installation and the complete scope map remain pending. This disclosure adds no condition to the standard MIT text.
+This acknowledgement is not a copyright assignment to a service or model, does not establish copyright in every generated passage, and does not relicense third-party material. See LICENSE and docs/license-scope.md for the installed CC0/MIT split and third-party exceptions. This disclosure adds no condition to the standard licence texts.

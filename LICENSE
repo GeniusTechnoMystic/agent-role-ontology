@@ -1,0 +1,11 @@
+# Agent Role Ontology licensing
+
+Copyright (c) 2026 Danny Poulson (GeniusTechnoMystic)
+
+This repository uses different terms for different original assets; it is not a blanket dual-licence choice.
+
+Original ontology, vocabulary, registry metadata, illustrative examples, project documentation and original report content are dedicated under CC0-1.0. See LICENSES/CC0-1.0.txt. Original software, scripts and executable tooling use the MIT License. See LICENSES/MIT.txt. The precise file/directory map and exceptions are in docs/license-scope.md.
+
+These grants apply only to rights the project contributors hold. Third-party material and dependencies retain their own terms. No trademark or patent permission is implied beyond the applicable licence text. AI assistance is disclosed in docs/ai-assistance.md, separately from these standard texts.
+
+Attribution is appreciated but not required for the project's CC0 material. When practical, credit the Agent Role Ontology project and link to https://github.com/GeniusTechnoMystic/agent-role-ontology. This request does not modify CC0. MIT notice-preservation obligations and third-party obligations remain applicable to their respective material.

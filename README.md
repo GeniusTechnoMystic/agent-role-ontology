@@ -11,4 +11,6 @@ See [AI assistance and provenance](docs/ai-assistance.md) for scope, verificatio
 
 Copyright (c) 2026 Danny Poulson (GeniusTechnoMystic)
 
-Original software, scripts, and executable tooling are licensed under the [MIT License](LICENSES/MIT.txt). The agreed policy for original ontology, vocabulary, registry metadata, examples, and project documentation is CC0-1.0; installation of the standard CC0 text and the complete licence scope map remains pending. See [the licensing policy](docs/licensing-policy.md). Third-party material retains its upstream terms. The AI acknowledgement is separate from, and does not modify, the standard licence texts.
+Original knowledge assets, including ontology specifications, metadata, examples and documentation, use [CC0-1.0](LICENSES/CC0-1.0.txt). Original software and executable tooling use the [MIT License](LICENSES/MIT.txt). See [LICENSE](LICENSE) and the [file-scope map](docs/license-scope.md); this is not a blanket choice between licences. Third-party material retains its upstream terms. The AI acknowledgement is separate from, and does not modify, the standard licence texts.
+
+See the [current plan](docs/plan-v0.2.md) and [restart checkpoint](docs/STATE.md) for task states and validation limits.

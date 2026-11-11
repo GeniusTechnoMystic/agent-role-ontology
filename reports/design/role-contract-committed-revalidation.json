@@ -1,0 +1,19 @@
+{
+  "task": "S01 committed-serialization revalidation",
+  "date": "2026-11-11",
+  "commit": "9f9fffc95750c018f281e3c23198976ff7e13686",
+  "environment": "conversation Python, jsonschema 4.23.0; not Runtime or CI",
+  "provenance": "Summary transcribed from successful checks in the 14:46 NZDT conversation turn; not a fresh execution in this publication turn.",
+  "schema_self_validation": "passed, Draft 2020-12",
+  "valid_examples_passed": 3,
+  "negative_cases_rejected": 18,
+  "negative_case_types": ["missing ID", "invalid prefix", "empty purpose", "missing criteria", "unexpected property", "empty responsibilities"],
+  "negative_coverage": "Each of six mutations applied separately to each of three examples.",
+  "verified_git_blobs": {
+    "schema/role-contract.schema.json": "b0853afb400dfd2979e951d70682ad25ac759634",
+    "examples/roles/role.software.code-review.json": "7350b77b9ea814fc46ef575257e91d372a084165",
+    "examples/roles/role.software.test-author.json": "b59205d96dc8e661cd463c84be28cab21466c9cb",
+    "examples/roles/role.security.assessor.json": "cf39fcde691c18bfb83d4e8c88aa04af6d05ecb4"
+  },
+  "limits": ["No semantic acceptance", "No cross-record reference checks", "No ontology reasoning", "No routing/effectiveness evaluation", "No CI execution"]
+}

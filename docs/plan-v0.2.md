@@ -1,27 +1,28 @@
 # Plan v0.2
 
-Date: 11 November 2026. New operational queue superseding stale ordering in implementation-plan-v0.1.md; architecture-v0.1.md remains draft.
+Updated: 11 November 2026, 15:06 NZDT. This operational queue supersedes stale ordering in implementation-plan-v0.1.md; architecture-v0.1.md remains draft. Statuses below describe this changeset once successfully committed.
 
-| Task | Owner | State before this commit | Completion gate |
+| Task | Owner | Status | Remaining gate |
 |---|---|---|---|
-| E1 AgentO archive/RDF validation | Research assistant + Runtime | Complete, committed at 6975824 | Captured evidence; do not repeat without changed inputs |
-| F01 Development environment | Research assistant | Prepared for this commit | Built configuration stored, lifecycle limits disclosed |
-| F02 Standard licences/scope | Research assistant or repository worker | Task ready; not executed | Verified standard texts, explicit scope, optional credit |
-| F03 Worker rules/checkpoint | Research assistant | Prepared for this commit | AGENTS, STATE, task-report template published |
-| I01 Mechanical local inventory | Local Kilo | Awaiting local read/export approval | Reproducible raw hashes/provenance, no source changes |
-| S01 Role-contract pilot | Research assistant + owner | Draft prepared and shape-checked | Three contracts and schema reviewed |
-| V01 Offline validation CI | Eligible Copilot workflow or local Kilo | Blocked on S01 | Valid examples pass, invalid records fail offline |
-| E2 Vocabulary alignment | Research assistant | Pending | Source-linked term crosswalk and reuse decision |
-| I02 Structured frontmatter/body inventory | Local Kilo | Not task-ready; needs I01 and schema | Explicit parser/errors/normalisation |
-| C01 Evidence extraction | Local Kilo | Not task-ready; needs fixed vocabulary and inputs | Three-to-five-file batch, quotations, proposals only |
-| R01 Resolution fixtures | Research assistant | Pending reviewed contracts/mappings | Explained selection, approval, or failure |
+| E1 AgentO archive/RDF validation | Research assistant + Runtime | Complete at 6975824 | Do not repeat without changed inputs; upstream rights remain unresolved |
+| F01 Development environment | Research assistant | Configuration published at 9f9fffc; image smoke-tested | Full Dev Containers/Codespaces lifecycle not tested; direct pins not transitive lock |
+| F02 Standard licences/scope | Research assistant | MIT published at 6e6d80c; CC0, root selector, and scope map included here | Owner approval and successful publication of this changeset |
+| F03 Worker rules/checkpoint | Research assistant | Published at 9f9fffc; checkpoint refreshed here | Keep current after meaningful work |
+| D01 AI disclosure/copyright identity | Research assistant + owner | Complete at 6e6d80c | Model label is owner-reported, not independently verified |
+| I01 Mechanical local inventory | Local Kilo | Awaiting explicit local read/export scope approval | Approved private output and reproducible provenance; no local task launched |
+| S01 Role-contract pilot | Research assistant + owner | Draft published; committed shape revalidated: 3 valid, 18 invalid cases | Semantic review/acceptance; not canonical yet |
+| V01 Offline validation CI | Eligible Copilot workflow or local Kilo | Blocked on S01 acceptance | Actual tests/workflow implemented and execution recorded |
+| E2 Vocabulary alignment | Research assistant | Pending | Source-linked crosswalk and reuse decision |
+| I02 Structured frontmatter/body inventory | Local Kilo | Not task-ready | I01 plus explicit parser/schema |
+| C01 Evidence extraction | Local Kilo | Not task-ready | Fixed vocabulary and authorised inputs; proposals only |
+| R01 Resolution fixtures | Research assistant | Pending | Reviewed contracts/mappings and explained selection/failure |
 
-## Sequence and accountability
+## Next sequence
 
-Publish foundations; finish licensing; run I01 locally while S01 is reviewed here. Add V01 only after approval. Research assistant retains semantic boundaries and ambiguous decisions; workers collect evidence and run tests. Runtime is an independent validator, not ongoing background work.
+Publish this status/licensing changeset; review S01 boundaries and structured-field needs here. Obtain explicit schema acceptance before V01. I01 may proceed independently only after local read/export approval. E2 research can inform S01 without silently adopting external terms. No ontology-wide acceptance, new worker launch, deployment, or Runtime wake is authorised by these statuses.
 
-Use existing tools before custom code. Verify Copilot plan feature access before assigning work; do not assume its connector launches coding agents. No automatic merges or deployments. Defer graph database, embeddings, custom installers/converters, trend automation, and multi-harness execution until a pilot demonstrates need.
+## Evidence and execution
 
-## Recovery
+See reports/design/role-contract-committed-revalidation.json for the recorded conversation-Python checks; these are not CI or Runtime results. The earlier preparation report remains historical, not latest status. Shared Dockerfile image was tested, not complete editor integration. Verify Copilot feature access before assignment; its availability is not established by a connector name.
 
-Update STATE.md after meaningful checkpoints: last confirmed commit, task states, approvals, retained resources, unknowns, exact next action. A task packet must stand alone without the conversation. Review current Git state before applying prepared changes.
+Reuse maintained tools first. Defer graph servers, custom converters/installers, embeddings, trend automation, and multi-harness execution until demonstrated need. Use exact task allowlists, no automatic merge/deploy, and stop after two failed attempts at a step. Update STATE.md with commits, approvals, evidence, retained resources, unknowns, and next action.
