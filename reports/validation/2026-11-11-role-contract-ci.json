@@ -1,0 +1,14 @@
+{
+  "task": "V01",
+  "status": "complete_for_tested_commit",
+  "verified_on": "2026-11-11",
+  "repository": "GeniusTechnoMystic/agent-role-ontology",
+  "commit": "409d786472563478b869430afe9643d3b4277a75",
+  "workflow": {"name": "Validate role contracts", "path": ".github/workflows/validate.yml", "id": 414105332},
+  "run": {"id": 42946080836, "number": 1, "attempt": 1, "event": "push", "branch": "main", "status": "completed", "conclusion": "success", "url": "https://github.com/GeniusTechnoMystic/agent-role-ontology/actions/runs/42946080836", "created_at": "2026-11-11T02:26:52Z", "updated_at": "2026-11-11T02:27:06Z"},
+  "job": {"id": 130279101735, "name": "validate", "conclusion": "success", "url": "https://github.com/GeniusTechnoMystic/agent-role-ontology/actions/runs/42946080836/job/130279101735", "runner_label": "ubuntu-latest", "all_returned_steps_successful": true},
+  "observed_environment": {"python": "3.12.16", "pytest": "8.3.5", "jsonschema": "4.23.0", "rdflib": "7.1.4", "PyYAML": "6.0.2"},
+  "observed_results": {"dependency_installation": "success", "pip_check": "No broken requirements found.", "pytest_command": "python -m pytest -q -p no:cacheprovider", "pytest_output": "85 passed in 0.20s"},
+  "evidence_method": "Read run listing, job/step listing and last 120 job-log lines using GitHub CI Operations. No rerun or manual dispatch. Summary only; full raw log not copied.",
+  "limits": ["Evidence applies to this commit/run/attempt, not future commits", "Shape checks do not establish semantic correctness or effectiveness", "Socket monkeypatch is not OS-level network isolation", "Setup and installation used network", "Direct pins are not a transitive lock; action major tags are not immutable SHAs", "No Runtime or full devcontainer lifecycle validation"]
+}
