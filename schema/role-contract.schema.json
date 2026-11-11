@@ -7,14 +7,14 @@
   "required": ["id", "label", "status", "purpose", "responsibilities", "exclusions", "inputs", "outputs", "acceptance_criteria"],
   "properties": {
     "id": {"type": "string", "pattern": "^role\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$"},
-    "label": {"type": "string", "minLength": 1},
+    "label": {"type": "string", "minLength": 1, "pattern": "\\S"},
     "status": {"const": "draft"},
-    "purpose": {"type": "string", "minLength": 1},
+    "purpose": {"type": "string", "minLength": 1, "pattern": "\\S"},
     "responsibilities": {"$ref": "#/$defs/nonemptyStrings"},
     "exclusions": {"$ref": "#/$defs/nonemptyStrings"},
     "inputs": {"$ref": "#/$defs/nonemptyStrings"},
     "outputs": {"$ref": "#/$defs/nonemptyStrings"},
     "acceptance_criteria": {"$ref": "#/$defs/nonemptyStrings"}
   },
-  "$defs": {"nonemptyStrings": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}}
+  "$defs": {"nonemptyStrings": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1, "pattern": "\\S"}}}
 }

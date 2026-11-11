@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-11",
+  "baseline_commit": "63b55b33efef38bf3a8cf0239e09a47d880e9044",
+  "task": "S01 hardening and V01 preparation",
+  "provenance": "Summary of successful conversation-Python execution during the 15:15 NZDT preparation turn, not a new execution during publication. Baseline schema and examples were reconstructed and verified against recorded Git blob hashes.",
+  "command": "python -m pytest -q -p no:cacheprovider",
+  "environment_setting": {"PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1"},
+  "exit_code": 0,
+  "result": "85 passed in 0.17s",
+  "counts": {"schema_check": 1, "valid_examples": 3, "original_negative_cases": 18, "whitespace_negative_cases": 63, "total": 85},
+  "whitespace_coverage": "Space, tab and newline in seven text-field positions across three examples.",
+  "network_boundary": "Autouse fixture blocks socket.socket and socket.create_connection during tests; no operating-system network sandbox claim. Workflow setup requires network.",
+  "workflow_checks": "PyYAML BaseLoader parse and assertions on events, permissions and timeout; not actionlint or GitHub execution.",
+  "publication_note": "Schema JSON formatting compacted relative to tested bundle; constraints unchanged. Published bytes still require CI verification.",
+  "action_sources": ["https://github.com/actions/checkout", "https://github.com/actions/setup-python"],
+  "limits": ["No GitHub Actions result yet", "No Runtime execution", "No immutable action SHA pins or transitive lock", "No semantic effectiveness or graph-integrity evaluation"]
+}

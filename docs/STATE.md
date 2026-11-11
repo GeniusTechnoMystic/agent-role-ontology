@@ -1,39 +1,29 @@
 # Restart checkpoint
 
-Updated: 11 November 2026, 15:06 NZDT. This file describes the status/licensing changeset awaiting publication; verify Git before treating it as committed.
+Updated: 11 November 2026, 15:20 NZDT. This checkpoint describes the proposed hardening/CI publication; verify Git before treating it as committed. Read AGENTS.md, this file, docs/plan-v0.2.md and the exact task packet. Git and execution evidence take precedence over chat memory.
 
-## Read order
+## Publication and approvals
 
-AGENTS.md; this file; docs/plan-v0.2.md; exact task packet; supporting evidence. Git and checked reports are durable state, not chat recollection. Check current branch and working tree before changes.
+Repository: GeniusTechnoMystic/agent-role-ontology, branch main. Freshly verified HEAD: 63b55b33efef38bf3a8cf0239e09a47d880e9044 (licence installation, plan/checkpoint and baseline validation summary). Prior commits: 6e6d80cfe6283df5f91ce00eeac4768f3cb08c1d (disclosure/MIT), 9f9fffc95750c018f281e3c23198976ff7e13686 (foundations), 69758242ee5c90c6983213ea67d07b6fee948d7c (AgentO validation); earlier 8c3fd25, 1960411, f66e7c7. Download bundles do not establish publication.
 
-## Publication
+At 15:15 the owner accepted the limited S01 direction: retain three draft roles, harden whitespace validation, defer broader ontology fields, and proceed with V01. At 15:20 publication was requested. GitHub is now exposed; main HEAD and baseline schema blob b0853afb400dfd2979e951d70682ad25ac759634 were rechecked. Exact-write approval precedes this changeset's push. Record the resulting commit from Git, not a guessed SHA.
 
-Repository: https://github.com/GeniusTechnoMystic/agent-role-ontology, branch main. Last confirmed commit: 6e6d80cfe6283df5f91ce00eeac4768f3cb08c1d (Perplexity/model disclosure and MIT). Foundations: 9f9fffc95750c018f281e3c23198976ff7e13686 (18 files: environment, worker rules, plan/state, task packets, draft pilot). Prior research validation: 69758242ee5c90c6983213ea67d07b6fee948d7c. Earlier: 8c3fd25 initial checkpoint; 1960411 AgentO review; f66e7c7 archive/architecture/plan. Download bundles are not publication evidence.
-
-This changeset adds CC0, root licence selector, complete scope map, refreshed statuses, and a recorded committed-schema check summary. F02 is complete only after this changeset is approved and published. Verify the resulting commit rather than invent its SHA.
+Included: hardened schema, pytest tests, workflow, pilot review, updated plan/checkpoint and validation report. Preparation: 85 tests passed. Local results are not GitHub Actions or Runtime results. S01 interface direction accepted, concepts remain draft; V01 awaits actual CI execution. I01 needs local read/export scope approval. No worker launched.
 
 ## Direction and rights
 
-Harness-neutral discovery/routing ontology and upstream implementation registry, not prompt hosting. Roles are tool-neutral responsibilities, not prompts or measured capability. Technologies/methods are facets. Separate roles, capabilities, definitions, conversions, deployments, executions, evaluations. Disclose authority, dependencies, paid/proprietary services, environment and data flows. Hard policy constraints precede ranking; unknown is explicit. Trends are discovery signals, not trust.
+Harness-neutral semantic discovery/routing and upstream implementation registry, not prompt hosting or custom orchestration. Roles are responsibilities, not prompts or measured capability. Technologies/methods are facets. Separate roles, capabilities, definitions, conversions, deployments, runs and evaluations. Hard constraints precede ranking; unknown is explicit. Disclose dependencies, services, authority and data flows. Popularity is not trust. Reuse maintained tools first; SKOS, PROV-O, LinkML, AgentO and Rulesync remain evaluation targets, not automatically adopted. No graph service, custom converter/package manager or autonomous orchestrator.
 
-Reuse before building: assess SKOS, PROV-O, LinkML, AgentO alignment and Rulesync; none is automatically adopted. No graph server, custom converter/package manager, or autonomous orchestrator yet.
+Original knowledge assets CC0; original executable tooling MIT. Read LICENSE and docs/license-scope.md. Copyright (c) 2026 Danny Poulson (GeniusTechnoMystic). Third-party terms preserved; voluntary attribution is not a CC0 condition. CC0 legal wording was transcribed; byte-identical upstream download not independently verified. Perplexity disclosure published; GPT-6.1 Sol label owner-reported for current session, not verified or assigned to all historical work.
 
-Original knowledge assets use CC0-1.0; software/executable tooling MIT; upstream rights preserved. Read LICENSE and docs/license-scope.md. Copyright notice: Copyright (c) 2026 Danny Poulson (GeniusTechnoMystic). Optional project credit is not a CC0 condition. Perplexity disclosure is published; GPT-6.1 Sol is owner-reported for the current session, not independently verified or attributed to all earlier work. See docs/ai-assistance.md.
+## Evidence and resources
 
-## Evidence
+AgentO GitHub/archive differ; DOI 18342624 resolves to 18342625. Prior Runtime download: 7,573-byte ZIP, matching published MD5 and all three uploaded member SHA-256 hashes; 402 RDF triples, 41 object properties, 13 datatype properties. Archive v0.2 aligns with PROV-O/P-Plan; agentRole remains string. No extractor execution/imports/reasoning/SHACL/effectiveness evaluation. Rights discrepancy unresolved. See reports/validation/2026-11-11-agento.json and docs/research/agento-runtime-validation.md.
 
-AgentO GitHub and archived ontology differ. DOI 18342624 resolves to 18342625. Runtime independently downloaded the 7,573-byte ZIP; published MD5 matched; all three members matched uploaded SHA-256 hashes. RDFLib parsed 402 triples, 41 object properties, 13 datatype properties. Archive v0.2 explicitly aligns with PROV-O/P-Plan; agentRole is a string. No extractor execution, imports, reasoning, SHACL, or effectiveness test. Rights discrepancy unresolved. See reports/validation/2026-11-11-agento.json and docs/research/agento-runtime-validation.md.
+Baseline S01 schema/example blobs verified before earlier 3-positive/18-negative checks; see reports/design/role-contract-committed-revalidation.json. Hardened proposal has a new report. No ontology reasoning, routing/effectiveness test, or cross-record graph validation.
 
-Committed S01 files at 9f9fffc were retrieved and byte equality verified against four Git blob hashes. Conversation Python/jsonschema 4.23.0: Draft 2020-12 self-check passed; three examples passed; six negative types applied to each example yielded 18 rejections. These were not Runtime or CI checks. Summary recorded in reports/design/role-contract-committed-revalidation.json; earlier preparation report is historical. Semantic acceptance remains pending.
+Last recorded Runtime image agent-role-ontology-dev:v0.1 version 1, ID 516864d2-eeb7-45e2-922d-a6de8b844ec4. Sandbox 906105ba-d4c5-4f07-9503-b0641c880fc2 last recorded stopped, disk retained; live state not rechecked. No Runtime resource started here. Do not wake without bounded approval; retained storage may cost money. Prior image: Python 3.12.16, RDFLib 7.1.4, PyYAML 6.0.2, jsonschema 4.23.0, pytest 8.3.5, pip check passed. Dockerfile image smoke-tested, full editor/devcontainer lifecycle untested. Direct pins not a transitive lock; no model keys needed. Copilot entitlement/quota unknown.
 
-## Runtime and worker continuity
+## Next action
 
-Last recorded image: agent-role-ontology-dev:v0.1, version 1, ID 516864d2-eeb7-45e2-922d-a6de8b844ec4. Last recorded sandbox: 906105ba-d4c5-4f07-9503-b0641c880fc2, stopped with disk retained. Live state was not queried for this changeset. No sandbox was started during subsequent schema/licensing work. Do not wake without bounded approval; retained storage may cost money.
-
-Recorded image checks: Python 3.12.16, RDFLib 7.1.4, PyYAML 6.0.2, jsonschema 4.23.0, pytest 8.3.5; pip check passed. Shared Dockerfile image tested, not full Dev Containers/Codespaces lifecycle. Pins not transitive lock. No model keys needed. No Copilot or local Kilo task launched; entitlement/quota unknown. Rediscover connectors when needed: message selection has previously omitted GitHub even while account-connected.
-
-## Next action and unknowns
-
-After publication, review S01 responsibility boundaries, observable outputs, independent assurance, and future capability/provenance fields. Obtain explicit acceptance before V01. I01 still needs local read/export approval; do not publish private inventory or prompt bodies. E2 crosswalk is pending; do not repeat completed AgentO parsing without changed inputs.
-
-Unknown: exact local collection contents/provenance, AgentO rights scope, final role/capability granularity, LinkML suitability, cross-harness compatibility. Preserve unknowns.
+After successful publication, inspect the CI run for the actual resulting commit. Do not mark CI complete in advance. E2 crosswalk can follow; do not repeat AgentO parsing absent changed inputs. Unknowns: local collection contents/provenance, AgentO rights, final role/capability granularity, LinkML suitability and cross-harness compatibility. No private inventory, prompt bodies or secrets should be published.

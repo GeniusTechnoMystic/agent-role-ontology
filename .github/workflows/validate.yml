@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: MIT
+name: Validate role contracts
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: role-contracts-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Install approved development dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Check installed dependencies
+        run: python -m pip check
+      - name: Validate contracts without test-time network access
+        run: python -m pytest -q -p no:cacheprovider
