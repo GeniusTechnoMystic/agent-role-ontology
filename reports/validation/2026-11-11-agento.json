@@ -1,0 +1,47 @@
+{
+  "report_kind": "structured_summary_of_captured_runtime_output",
+  "date": "2026-11-11",
+  "status": "passed_with_stated_limits",
+  "environment": {
+    "provider": "Runtime",
+    "image": "agent-role-ontology-dev:v0.1",
+    "image_version": 1,
+    "image_id": "516864d2-eeb7-45e2-922d-a6de8b844ec4",
+    "python": "3.12.16",
+    "packages": {"rdflib": "7.1.4", "PyYAML": "6.0.2", "jsonschema": "4.23.0", "pytest": "8.3.5"},
+    "pip_check": "passed in initial command",
+    "project_checkout": "f66e7c7397e8541a1a32dc748d4e955567fa030a"
+  },
+  "archive": {
+    "requested_doi": "https://doi.org/10.5281/zenodo.18342624",
+    "resolved_record": "https://zenodo.org/records/18342625",
+    "download_url": "https://zenodo.org/records/18342625/files/agento.zip?download=1",
+    "bytes": 7573,
+    "md5": "c753ef8581fbc9d480c6188f8125e9c3",
+    "matches_recorded_published_md5": true,
+    "sha256": "f77e09d3f4bcc6230e2c3da67d8973dbe141cb420523102ff1715d738681d981"
+  },
+  "members": [
+    {"path": "agento/extractor/analysis.prompt.md", "bytes": 2509, "sha256": "4d54fd1bcfcf5f928a1790fd298937370a9a34faabc7214d3aace423427018ec", "matches_uploaded_file": true},
+    {"path": "agento/extractor/run_prompt.py", "bytes": 2918, "sha256": "1b502b49f47eac0544ff44971a1ed1ff3e4045644b957929ed7fdcd54499d07d", "matches_uploaded_file": true},
+    {"path": "agento/ontology.ttl", "bytes": 27755, "sha256": "aa38576497aea5597f13808e208c227e4c39fa52adfd3cef715ab24fd966348e", "matches_uploaded_file": true}
+  ],
+  "ontology": {
+    "turtle_parse": "passed",
+    "triples": 402,
+    "object_property_count": 41,
+    "datatype_property_count": 13,
+    "version": "0.2",
+    "declared_imports": [],
+    "agent_role_range": "http://www.w3.org/2001/XMLSchema#string",
+    "explicit_subclass_alignments": {
+      "LLMAgent": ["http://www.w3.org/ns/prov#Agent", "http://www.w3id.org/agentic-ai/onto#Tool"],
+      "HumanAgent": ["http://www.w3.org/ns/prov#Agent"],
+      "WorkflowPattern": ["http://purl.org/net/p-plan#Plan"],
+      "WorkflowStep": ["http://purl.org/net/p-plan#Step"]
+    }
+  },
+  "extractor_ast_parse": "passed; not executed",
+  "limits": ["No archive code executed", "No RDF imports loaded", "No reasoning or SHACL validation", "No task-effectiveness evaluation", "Not a complete devcontainer-client lifecycle test"],
+  "publication_provenance": "Summarised from successful connector stdout and earlier smoke-test stdout; sandbox report was not re-read after stopping."
+}
