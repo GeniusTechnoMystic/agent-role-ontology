@@ -1,0 +1,8 @@
+{
+  "status": "preparation_shape_checks_passed_committed_serialization_revalidation_pending",
+  "tool": "jsonschema",
+  "valid_examples": 3,
+  "negative_cases_rejected": ["missing ID", "invalid prefix", "empty purpose", "missing criteria", "unexpected property", "empty responsibilities"],
+  "provenance": "Checks ran in the conversation Python environment during bundle preparation, not Runtime or CI. The committed schema factors repeated constraints into local references and must be revalidated.",
+  "limits": ["No upstream classification", "No cross-record reference validation", "No ontology reasoning", "No routing/effectiveness evaluation", "Draft schema not accepted"]
+}

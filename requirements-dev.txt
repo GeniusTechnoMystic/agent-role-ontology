@@ -1,0 +1,5 @@
+# Direct dependency pins, not a transitive lock. Dependencies retain their licences.
+rdflib==7.1.4
+PyYAML==6.0.2
+jsonschema==4.23.0
+pytest==8.3.5

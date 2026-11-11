@@ -1,0 +1,11 @@
+{
+  "name": "Agent Role Ontology",
+  "build": {"dockerfile": "Dockerfile", "context": ".."},
+  "remoteUser": "sandbox",
+  "containerUser": "sandbox",
+  "updateRemoteUserUID": true,
+  "customizations": {"vscode": {
+    "extensions": ["ms-python.python", "redhat.vscode-yaml"],
+    "settings": {"python.defaultInterpreterPath": "/opt/venv/bin/python"}
+  }}
+}

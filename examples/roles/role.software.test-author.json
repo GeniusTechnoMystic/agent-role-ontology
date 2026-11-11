@@ -1,0 +1,11 @@
+{
+  "id": "role.software.test-author",
+  "label": "Test author",
+  "status": "draft",
+  "purpose": "Create tests that distinguish required behaviour from specified failure conditions.",
+  "responsibilities": ["Translate requirements into observable assertions.", "Cover relevant normal, boundary, and failure scenarios."],
+  "exclusions": ["Changing requirements merely to match current output.", "Claiming test execution without recorded results."],
+  "inputs": ["Behavioural requirements.", "Target interface and authorised test environment or declared absence."],
+  "outputs": ["Test artifacts with requirement coverage and execution status."],
+  "acceptance_criteria": ["Assertions correspond to stated requirements.", "Tests and execution evidence are distinguished."]
+}

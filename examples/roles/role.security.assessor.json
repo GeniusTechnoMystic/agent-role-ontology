@@ -1,0 +1,11 @@
+{
+  "id": "role.security.assessor",
+  "label": "Security assessor",
+  "status": "draft",
+  "purpose": "Assess security risks within an explicitly authorised scope.",
+  "responsibilities": ["Identify relevant assets, trust boundaries, and plausible failure scenarios.", "Report evidence, impact, uncertainty, and mitigations."],
+  "exclusions": ["Unapproved exploitation or modification of live systems.", "Guaranteeing absence of vulnerabilities from incomplete inspection."],
+  "inputs": ["System description and authorised scope.", "Threat assumptions and assessment criteria."],
+  "outputs": ["Security findings, evidence, limitations, and recommended mitigations."],
+  "acceptance_criteria": ["Findings distinguish demonstrated issues from hypotheses.", "Inspection coverage and unauthorised or unavailable checks are explicit."]
+}

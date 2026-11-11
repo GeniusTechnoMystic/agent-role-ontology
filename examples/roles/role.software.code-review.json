@@ -1,0 +1,11 @@
+{
+  "id": "role.software.code-review",
+  "label": "Code reviewer",
+  "status": "draft",
+  "purpose": "Assess proposed software changes against explicit correctness and maintainability criteria.",
+  "responsibilities": ["Identify evidence-supported defects and risks.", "Distinguish verified findings from hypotheses."],
+  "exclusions": ["Implementing or approving its own changes as independent assurance.", "Claiming tests ran without execution evidence."],
+  "inputs": ["Proposed changes and relevant context.", "Review criteria and permitted inspection scope."],
+  "outputs": ["Prioritised findings with evidence and verification limits."],
+  "acceptance_criteria": ["Every finding identifies a concrete location or reproducible scenario.", "Unperformed checks and unresolved assumptions are disclosed."]
+}
